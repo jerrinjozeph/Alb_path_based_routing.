@@ -1,5 +1,5 @@
 ## AWS Application Load Balancer: Implementation of Path-Based Routing
-This project demonstrates the configuration of an AWS Application Load Balancer (ALB) to manage traffic for a multi-component shopping application using path-based routing rules. This architecture allows a single entry point to route requests to different backend services based on the URL path.
+Amazon’s Application Load Balancer (ALB) is a highly scalable and efficient solution for distributing incoming application traffic across multiple targets. By enabling path-based routing, ALB allows you to host multiple applications on a single load balancer, making it a versatile choice for managing complex application infrastructures. In this blog, we will explore how to configure ALB with path-based routing, 
 
 --------------------------------------------------------------------------------
 ### 1. Backend Infrastructure: EC2 Instances
@@ -23,8 +23,8 @@ Each EC2 instance is associated with a specific Target Group. All target groups 
 --------------------------------------------------------------------------------
 ### 3. Application Load Balancer (ALB) Setup
 The load balancer, named shopping-lb, is an internet-facing ALB deployed within a specific VPC. It features two primary listeners:
-• HTTP:80: Automatically redirects all traffic to HTTPS:443 (301 Permanent Redirect) to ensure secure connections.
-• HTTPS:443: The primary secure listener that evaluates routing rules.
+- HTTP:80: Automatically redirects all traffic to HTTPS:443 (301 Permanent Redirect) to ensure secure connections.
+- HTTPS:443: The primary secure listener that evaluates routing rules.
 <img width="1882" height="715" alt="alb" src="https://github.com/user-attachments/assets/98b47fc5-cf9d-4b95-8572-11d795127720" />
 
 --------------------------------------------------------------------------------
