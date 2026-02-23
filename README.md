@@ -27,7 +27,9 @@ Each EC2 instance is associated with a specific Target Group. All target groups 
 - orders-tg
 - billing-tg
 - items-tg
- 
+
+Register your application instances with the appropriate target groups, ensuring that each application is associated with the correct target group.
+
 <img width="1521" height="648" alt="all_tgs" src="https://github.com/user-attachments/assets/35d46ae8-8a06-4ee3-833f-ad9594603a35" />
 
 --------------------------------------------------------------------------------
