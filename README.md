@@ -10,6 +10,7 @@ Amazon’s Application Load Balancer (ALB) is a highly scalable and efficient so
 - Improved Security: Secure Sockets Layer (SSL) termination and support for multiple SNI and domains in ALB enhance the security of your applications and customer data.
 
 --------------------------------------------------------------------------------
+## Step-by-Step Process to Configure ALB with Path-Based Routing
 
 ### 1. Backend Infrastructure: EC2 Instances
 The application is powered by four separate t3.micro EC2 instances running in the ap-south-2a availability zone. These instances represent the different functional areas of the shopping application:
