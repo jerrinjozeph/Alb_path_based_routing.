@@ -2,6 +2,15 @@
 Amazon’s Application Load Balancer (ALB) is a highly scalable and efficient solution for distributing incoming application traffic across multiple targets. By enabling path-based routing, ALB allows you to host multiple applications on a single load balancer, making it a versatile choice for managing complex application infrastructures. In this blog, we will explore how to configure ALB with path-based routing, 
 
 --------------------------------------------------------------------------------
+
+### Benefits of Using Path-Based Routing with ALB
+- Simplified Architecture: By hosting multiple applications on a single ALB, you can reduce the number of load balancers and network configurations, simplifying your infrastructure.
+- Resource Optimization: ALB’s dynamic path-based routing efficiently distributes traffic based on request paths, ensuring optimal utilization of resources.
+- Enhanced Flexibility: Path-based routing enables easy addition, removal, or update of application paths, allowing you to adapt to changing requirements without disruptions.
+- Improved Security: Secure Sockets Layer (SSL) termination and support for multiple SNI and domains in ALB enhance the security of your applications and customer data.
+
+--------------------------------------------------------------------------------
+
 ### 1. Backend Infrastructure: EC2 Instances
 The application is powered by four separate t3.micro EC2 instances running in the ap-south-2a availability zone. These instances represent the different functional areas of the shopping application:
 - main-server: The landing page.
